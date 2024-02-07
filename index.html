@@ -18,7 +18,8 @@
         </div>
     </header>
 
-    <!-- pages are created from here -->
+    <!-- pages  yaha se banye hai -->
+    <!-- textarea me code ke line me suru me gap nhi dena hai -->
     <main>
         <div id="page1" class="page active">
             <h2>experimet 1</h2>
@@ -70,7 +71,7 @@ echo "The cube is $b"
             </div>
             <p>Description text goes here.</p>
         </div>
-        <!-- Repeat the above div for remaining pages -->
+        <!-- yha page end ho gya - check kro ashishsuman.me/os  -->
     </main>
     <footer>
         Created for my friends with love &#9829; <br> All rights reserved to &copy; Ashish Suman.
@@ -98,7 +99,6 @@ echo "The cube is $b"
         });
     
         visitProfileBtn.addEventListener('click', () => {
-            // Redirect to My profile page
             window.location.href = "https://ashishsuman.me";
         });
     
@@ -108,7 +108,7 @@ echo "The cube is $b"
                 page.classList.remove('active');
             });
             document.getElementById(`page${pageNumber}`).classList.add('active');
-            adjustTextareaHeights(); // Adjust textarea heights when a page is shown
+            adjustTextareaHeights();
         }
     
         function adjustTextareaHeights() {
@@ -131,7 +131,6 @@ echo "The cube is $b"
             document.getElementById("visitProfileBtn").innerText = "My Profile";
         }
     
-        // Adjust textarea heights on initial page load
         adjustTextareaHeights();
     
     </script>
