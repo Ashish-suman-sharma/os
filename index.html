@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>operating system all experimet</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div>
-            <button id="visitProfileBtn" >Visit My Profile</button>
-        </div>
-        <div>
-            <button id="previousBtn">Previous</button>
-            <button id="nextBtn">Next</button>
-        </div>
+      <div>
+        <button id="visitProfileBtn">Visit My Profile</button>
+      </div>
+      <div>
+        <button id="previousBtn">Previous</button>
+        <button id="nextBtn">Next</button>
+      </div>
     </header>
 
     <!-- pages  yaha se banye hai -->
     <!-- textarea me code ke line me suru me gap nhi dena hai -->
     <main>
-        <div id="page1" class="page active">
-            <h2>Experimet 1</h2>
-            <div class="code-container">
-                <textarea readonly>echo "enter two number"
+      <div id="page1" class="page active">
+        <h2>Experimet 1</h2>
+        <div class="code-container">
+          <textarea readonly>
+echo "enter two number"
 read a b
 if [ $a -gt $b ]; 
 then
@@ -32,41 +33,57 @@ then
 else
         echo "$b is greater"
 fi
-                    </textarea>
-                <button class="copy-btn">Copy</button>
-            </div>
-            <p>Step 1:create a file and open in vim ~ vi experiment1.sh <br> Step 2: write above code in vim editor <br> Step 3: exit vi by pressing -> esc : w q <br> Step 4: run code  by ~ sh experiment1.sh</p>
-
-            <h4 class="correct">Code Correction:</h4>
-            <span class="correct">There is 2 error in Lab manual exp 1</span>
-            <ul>
-                <li class="">There is no space between if and [</li>
-                <li class="">There is no -gt (greater than) used for compare</li>  
-            </ul>
+                    </textarea
+          >
+          <button class="copy-btn">Copy</button>
         </div>
-        <div id="page2" class="page">
-            <h2>Experimet 2</h2>
-            <div class="code-container">
-                <textarea readonly>echo "Enter a number:"
+        <p>
+          Step 1:create a file and open in vim ~ vi experiment1.sh <br />
+          Step 2: write above code in vim editor <br />
+          Step 3: exit vi by pressing -> esc : w q <br />
+          Step 4: run code by ~ sh experiment1.sh
+        </p>
+
+        <h4 class="correct">Code Correction:</h4>
+        <span class="correct">There is 2 error in Lab manual exp 1</span>
+        <ul>
+          <li class="">There is no space between if and [</li>
+          <li class="">There is no -gt (greater than) used for compare</li>
+        </ul>
+      </div>
+      <div id="page2" class="page">
+        <h2>Experimet 2</h2>
+        <div class="code-container">
+          <textarea readonly>
+echo "Enter a number:"
 read a
 let b=$a*$a*$a
 echo "The cube is $b"                   
-                    </textarea>
-                <button class="copy-btn">Copy</button>
-            </div>
-            <p>Step 1:create a file and open in vim ~ vi experiment2.sh <br> Step 2: write above code in vim editor <br> Step 3: exit vi by pressing -> esc : w q <br> Step 4: run code  by ~ <strong >bash experiment2.sh</strong> </p>
-
-            <h4 class="correct">Code Correction:</h4>
-            <span class="correct">There is 2 error in Lab manual exp 2</span>
-            <ul>
-                <li class="">No need of using \ this bw $a</li>
-                <li >Run using Bash insted of sh beacuse let syntax not used for sh </li>  
-            </ul>
+                    </textarea
+          >
+          <button class="copy-btn">Copy</button>
         </div>
-        <div id="page3" class="page">
-            <h2>Experimet 3</h2>
-            <div class="code-container">
-                <textarea readonly>echo "Enter limit:"
+        <p>
+          Step 1:create a file and open in vim ~ vi experiment2.sh <br />
+          Step 2: write above code in vim editor <br />
+          Step 3: exit vi by pressing -> esc : w q <br />
+          Step 4: run code by ~ <strong>bash experiment2.sh</strong>
+        </p>
+
+        <h4 class="correct">Code Correction:</h4>
+        <span class="correct">There is 2 error in Lab manual exp 2</span>
+        <ul>
+          <li class="">No need of using \ this bw $a</li>
+          <li>
+            Run using Bash insted of sh beacuse let syntax not used for sh
+          </li>
+        </ul>
+      </div>
+      <div id="page3" class="page">
+        <h2>Experimet 3</h2>
+        <div class="code-container">
+          <textarea readonly>
+echo "Enter limit:"
 read n
 i=1
 sum=0
@@ -77,27 +94,257 @@ do
 done
 echo "The sum of $n numbers is $sum"
                                     
-                    </textarea>
-                <button class="copy-btn">Copy</button>
-            </div>
-            <p>Step 1:create a file and open in vim ~ vi experiment3.sh <br> Step 2: write above code in vim editor <br> Step 3: exit vi by pressing -> esc : w q <br> Step 4: run code  by ~ <strong >sh experiment3.sh</strong> </p>
-
-            <h4 class="correct">Code Correction:</h4>
-            <span class="correct">There is 2 error in Lab manual exp 3</span>
-
-            
-            <ul>
-                <li >Added spaces around the square brackets in the while loop condition</li>
-                <li >Replaced let with arithmetic expansion $((...)). </li>  
-            </ul>
+                    </textarea
+          >
+          <button class="copy-btn">Copy</button>
         </div>
-        <!-- yha page end ho gya - check kro ashishsuman.me/os  -->
-    </main>
-    <footer>
-        Created for my friends with love &#9829; <br> All rights reserved to &copy; Ashish Suman.
-    </footer>
+        <p>
+          Step 1:create a file and open in vim ~ vi experiment3.sh <br />
+          Step 2: write above code in vim editor <br />
+          Step 3: exit vi by pressing -> esc : w q <br />
+          Step 4: run code by ~ <strong>sh experiment3.sh</strong>
+        </p>
 
+        <h4 class="correct">Code Correction:</h4>
+        <span class="correct">There is 2 error in Lab manual exp 3</span>
+
+        <ul>
+          <li>
+            Added spaces around the square brackets in the while loop condition
+          </li>
+          <li>Replaced let with arithmetic expansion $((...)).</li>
+        </ul>
+      </div>
+      <div id="page4" class="page">
+        <h2>Experimet 4</h2>
+        <div class="code-container">
+          <textarea readonly>
+echo "Enter two numbers:"
+read a b
+t=$a
+a=$b
+b=$t
+echo "a=$a b=$b"                   
+                    </textarea
+          >
+          <button class="copy-btn">Copy</button>
+        </div>
+        <p>
+          Step 1:create a file and open in vim ~ vi experiment4.sh <br />
+          Step 2: write above code in vim editor <br />
+          Step 3: exit vi by pressing -> esc : w q <br />
+          Step 4: run code by ~ <strong>sh experiment4.sh</strong>
+        </p>
+
+        <h4 class="correct">Code Correction:</h4>
+        <span class="correct">There is no error in Lab manual exp 4</span>
+        <ul>
+          <li>no err</li>
+        </ul>
+      </div>
+      <div id="page5" class="page">
+        <h2>Experimet 5</h2>
+        <div class="code-container">
+          <textarea readonly>
+echo "Enter the number"
+read a
+if [ $a -ge 0 ]; then
+    echo "$a is positive"
+else
+    echo "$a is negative"
+fi                    
+                    </textarea
+          >
+          <button class="copy-btn">Copy</button>
+        </div>
+        <p>
+          Step 1:create a file and open in vim ~ vi experiment5.sh <br />
+          Step 2: write above code in vim editor <br />
+          Step 3: exit vi by pressing -> esc : w q <br />
+          Step 4: run code by ~ <strong>sh experiment5.sh</strong>
+        </p>
+
+        <h4 class="correct">Code Correction:</h4>
+        <span class="correct">There is 2 error in Lab manual exp 5</span>
+        <ul>
+          <li>Added spaces around the square brackets in the if condition.</li>
+          <li>Added a semicolon after the if condition.</li>
+        </ul>
+      </div>
+      <div id="page6" class="page">
+        <h2>Experimet 6</h2>
+        <div class="code-container">
+          <textarea readonly>
+#!/bin/bash
+
+j=1
+while [ $j -eq 1 ]
+do
+    echo "Enter thet Operand:"
+    read f1
+    echo "Enter the second operand:"
+    read f2
+    echo "1-> Addition"
+    echo "2-> Subtraction"
+    echo "3-> Multiplication"
+    echo "4-> Division"
+    echo "Enter your choice"
+    read n
+                    
+    case "$n" in
+        1)
+            echo "Addition"
+            f3=$((f1 + f2))
+            echo "The result is: $f3"
+             ;;
+        2)
+            echo "Subtraction"
+            let "f4=$f1 - $f2"
+            echo "The result is: $f4"
+            ;;
+        3)
+                cho "Multiplication"
+            let "f5=$f1 * $f2"
+            echo "The result is: $f5"
+            ;;
+        4)
+            echo "Division"
+            let "f6=$f1 / $f2"
+            echo "The result is: $f6"
+            ;;
+    esac
+                    
+    echo "Do you want to continue? (press: 1 otherwise pany key to quit)"
+    read j
+done
+                    
+                    </textarea
+          >
+          <button class="copy-btn">Copy</button>
+        </div>
+        <p>
+          Step 1:create a file and open in vim ~ vi experiment6.sh <br />
+          Step 2: write above code in vim editor <br />
+          Step 3: exit vi by pressing -> esc : w q <br />
+          Step 4: run code by ~ <strong>sh experiment6.sh</strong>
+        </p>
+
+        <h4 class="correct">Code Correction:</h4>
+        <span class="correct">There is 4 error in Lab manual exp 6</span>
+        <ul>
+          <li>Corrected the syntax errors related to double quotes.</li>
+          <li>RRemoved unnecessary 'done' statement at the end.</li>
+          <li>Fixed the user prompt for continuing the loop.</li>
+          <li>Corrected the invalid choice handling.</li>
+        </ul>
+      </div>
+      <div id="page7" class="page">
+        <h2>Experimet 7</h2>
+        <div class="code-container">
+          <textarea readonly>
+coming soon
+                    </textarea
+          >
+          <button class="copy-btn">Copy</button>
+        </div>
+        <p>
+          Step 1:create a file and open in vim ~ vi experiment7.sh <br />
+          Step 2: write above code in vim editor <br />
+          Step 3: exit vi by pressing -> esc : w q <br />
+          Step 4: run code by ~ <strong>sh experiment7.sh</strong>
+        </p>
+
+        <h4 class="correct">Code Correction:</h4>
+        <!-- <span class="correct">There is 2 error in Lab manual exp 7</span>
+        <ul>
+          <li>
+            Added spaces around the square brackets in the for loop condition
+          </li>
+          <li>Replaced let with arithmetic expansion $((...)).</li>
+        </ul> -->
+      </div>
+      <div id="page8" class="page">
+        <h2>Experimet 8</h2>
+        <div class="code-container">
+          <textarea readonly>
+coming soon
+                    </textarea
+          >
+          <button class="copy-btn">Copy</button>
+        </div>
+        <p>
+          Step 1:create a file and open in vim ~ vi experiment8.sh <br />
+          Step 2: write above code in vim editor <br />
+          Step 3: exit vi by pressing -> esc : w q <br />
+          Step 4: run code by ~ <strong>sh experiment8.sh</strong>
+        </p>
+
+        <h4 class="correct">Code Correction:</h4>
+        <!-- <span class="correct">There is 2 error in Lab manual exp 8</span>
+        <ul>
+          <li>
+            Added spaces around the square brackets in the for loop condition
+          </li>
+          <li>Replaced let with arithmetic expansion $((...)).</li>
+        </ul> -->
+      </div>
+      <div id="page9" class="page">
+        <h2>Experimet 9</h2>
+        <div class="code-container">
+          <textarea readonly>
+coming soon
+                    </textarea
+          >
+          <button class="copy-btn">Copy</button>
+        </div>
+        <p>
+          Step 1:create a file and open in vim ~ vi experiment9.sh <br />
+          Step 2: write above code in vim editor <br />
+          Step 3: exit vi by pressing -> esc : w q <br />
+          Step 4: run code by ~ <strong>sh experiment9.sh</strong>
+        </p>
+
+        <h4 class="correct">Code Correction:</h4>
+        <!-- <span class="correct">There is 2 error in Lab manual exp 9</span>
+        <ul>
+          <li>
+            Added spaces around the square brackets in the for loop condition
+          </li>
+          <li>Replaced let with arithmetic expansion $((...)).</li>
+        </ul> -->
+      </div>
+      <div id="page10" class="page">
+        <h2>Experimet 10</h2>
+        <div class="code-container">
+          <textarea readonly>
+coming soon
+                    </textarea
+          >
+          <button class="copy-btn">Copy</button>
+        </div>
+        <p>
+          Step 1:create a file and open in vim ~ vi experiment10.sh <br />
+          Step 2: write above code in vim editor <br />
+          Step 3: exit vi by pressing -> esc : w q <br />
+          Step 4: run code by ~ <strong>sh experiment10.sh</strong>
+        </p>
+
+        <h4 class="correct">Code Correction:</h4>
+        <!-- <span class="correct">There is 2 error in Lab manual exp 10</span>
+        <ul>
+          <li>
+            Added spaces around the square brackets in the for loop condition
+          </li>
+          <li>Replaced let with arithmetic expansion $((...)).</li>
+        </ul> -->
+      </div>
+      <!-- yha page end ho gya - check kro ashishsuman.me/os  -->
+    </main>
+    <footer id="foot">
+        Created for my friends with love &#9829; <br />
+        All rights reserved to &copy; Ashish Suman. <br />
+        <button id="btn">press to hide this grey area</button>
+    </footer>
     <script src="script.js"></script>
-    
-</body>
+  </body>
 </html>

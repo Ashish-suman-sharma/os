@@ -52,4 +52,11 @@ if (window.matchMedia("(max-width: 600px)").matches) {
     document.getElementById("visitProfileBtn").innerText = "My Profile";
 }
 
+let btn = document.getElementById('btn');
+let foot = document.getElementById('foot');
+
+btn.addEventListener('click', function() {
+    foot.style.display = 'none';
+}); 
+
 adjustTextareaHeights();
